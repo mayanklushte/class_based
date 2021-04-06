@@ -48,10 +48,10 @@ def user_login(request):
         if user:
             if user.is_active and user.is_customer:
                 login(request, user)
-                return HttpResponseRedirect(reverse('accounts:user_register'))
+                return HttpResponseRedirect(reverse('users:index'))
             elif user.is_active and user.is_Shop:
                 login(request, user)
-                return HttpResponseRedirect(reverse('accounts:shop_register'))
+                return HttpResponseRedirect(reverse('shop:index'))
             else:
                 return HttpResponseRedirect(reverse('accounts:index'))
         else:

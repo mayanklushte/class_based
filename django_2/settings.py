@@ -38,6 +38,8 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'accounts',
+    'shop',
+    'users'
 ]
 
 MIDDLEWARE = [
@@ -137,3 +139,4 @@ MEDIA_URL = '/media/'
 
 # Abstract User
 AUTH_USER_MODEL = 'accounts.User'
+LOGIN_URL = 'accounts:login'

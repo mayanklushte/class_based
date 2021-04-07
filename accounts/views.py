@@ -40,6 +40,7 @@ def shop_register(request):
 
 
 def user_login(request):
+
     if request.method == 'POST':
         username = request.POST.get('username')
         password = request.POST.get('password')

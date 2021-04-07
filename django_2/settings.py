@@ -39,7 +39,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'accounts',
     'shop',
-    'users'
+    'users',
 ]
 
 MIDDLEWARE = [
@@ -140,3 +140,4 @@ MEDIA_URL = '/media/'
 # Abstract User
 AUTH_USER_MODEL = 'accounts.User'
 LOGIN_URL = 'accounts:login'
+
